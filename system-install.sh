@@ -8,6 +8,8 @@ then
 	pacman -Syu
 	pacman -S $packages
 
+	$DIRNAME/base-configurations.sh
+
 	systemctl enable NetworkManager
 	systemctl enable lightdm
 
