@@ -8,7 +8,11 @@ then
 	pacman -Syu
 	pacman -S $packages
 
+	systemctl enable NetworkManager
+	systemctl enable lightdm
+
 	pacman -S git
+	rm -rf /tmp/pamac-install
 	git clone https://aur.archlinux.org/pamac-aur.git /tmp/pamac-install
 	makepkg -sic BUILDDIR=/tmp/pamac-install
 
