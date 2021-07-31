@@ -25,3 +25,18 @@ echo 'LANG=pt_BR.UTF-8' > /etc/locale.conf
 
 touch /etc/vconsole.conf
 echo 'KEYMAP=br-abnt2' > /etc/vconsole.conf
+
+echo 'Nome do PC na rede:'
+read hostname
+
+touch /etc/hostname
+echo "$hostname" > /etc/hostname
+
+touch /etc/hosts
+echo "127.0.0.1	localhost 
+127.0.1.1	$hostname 
+::1	localhost ip6-localhost ip6-loopback 
+ff02::1	ip6-allnodes 
+ff02::2	ip6-allrouters" > /etc/hosts
+
+echo "Nova senha para root:"
