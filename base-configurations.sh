@@ -38,4 +38,4 @@ passwd $user
 pacman -S git
 rm -rf /tmp/pamac-install
 git clone https://aur.archlinux.org/pamac-aur.git /tmp/pamac-install
-su - $user -c makepkg -sic BULDDIR=/tmp/pamac-install
+su - $user -c makepkg -sic BUILDDIR=/tmp/pamac-install
