@@ -6,9 +6,9 @@ if [ $loadedPackages = "1" ]
 then	
 	packages=($(cat packages))
 	pacman -Syu
-	pacman -S $packages --no-confirm
+	pacman -S $packages
 
-	pacman -S git --no-confirm
+	pacman -S git
 	git clone https://aur.archlinux.org/pamac-aur.git /tmp/pamac-install
 	makepkg -sic BUILDDIR=/tmp/pamac-install
 
