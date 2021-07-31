@@ -13,3 +13,6 @@ then
 fi
 
 arch-chroot /mnt
+
+ln -sf /usr/share/zoneinfo/America/Fortaleza /etc/localtime
+hwclock --systohc
