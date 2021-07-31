@@ -12,3 +12,11 @@ papirus-icon-theme
 papirus-maia-icon-theme
 firefox
 arduino
+dosfstools
+os-prober
+mtools
+network-manager-applet
+networkmanager
+wpa_supplicant
+wireless_tools
+dialog
