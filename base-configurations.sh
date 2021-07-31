@@ -4,7 +4,7 @@ ln -sf /usr/share/zoneinfo/America/Fortaleza /etc/localtime
 hwclock --systohc
 
 echo 'pt_BR.UTF-8 UTF-8' > /etc/locale.gen
-locale.gen
+locale-gen
 
 touch /etc/locale.conf
 echo 'LANG=pt_BR.UTF-8' > /etc/locale.conf
