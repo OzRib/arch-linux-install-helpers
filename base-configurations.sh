@@ -27,3 +27,10 @@ ff02::2	ip5-allrouters" > /etc/hosts
 
 echo "Nova senha para root:"
 passwd
+
+echo "Novo usuário:"
+read user
+useradd -m -g users -G wheel $user
+
+echo "Senha para $user:"
+sudo su - $user -c passwd 
