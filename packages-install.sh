@@ -9,7 +9,7 @@ then
 	pacman -S $packages --no-confirm
 
 	pacman -S git --no-confirm
-	git clone https://aur./archlinux.org/pamac-aur.git /tmp/pamac-install
+	git clone https://aur.archlinux.org/pamac-aur.git /tmp/pamac-install
 	makepkg -sic BUILDDIR=/tmp/pamac-install
 
 	echo "Finalizado"
