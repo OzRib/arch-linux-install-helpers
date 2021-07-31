@@ -11,3 +11,5 @@ then
 	echo "fstab não gerado. Saindo poer segurança"
 	exit
 fi
+
+arch-chroot /mnt
