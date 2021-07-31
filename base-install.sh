@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pacstrap -i /mnt base base-devel linux linux-firmware vim man info man-db map-pages texinfo
+pacstrap -i /mnt base base-devel linux linux-firmware vim man man-db man-pages texinfo
 
 genfstab -U /mnt > /mnt/etc/fstab
 
