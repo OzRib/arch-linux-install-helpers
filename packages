@@ -14,6 +14,8 @@ papirus-maia-icon-theme
 firefox
 arduino
 dosfstools
+grub-install
+grub-update
 os-prober
 mtools
 network-manager-applet
