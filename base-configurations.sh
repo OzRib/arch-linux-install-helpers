@@ -33,4 +33,4 @@ read user
 useradd -m -g users -G wheel $user
 
 echo "Senha para $user:"
-sudo su - $user -c passwd 
+passwd $user
