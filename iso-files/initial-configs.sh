@@ -51,7 +51,4 @@ fi
 
 timedatectl set-ntp true
 
-echo "Okay... Continue com o particionamento manualmente"
-
-EFI_MODE=$(ls /sys/firmware/efi/efivars >/dev/null && echo "UEFI" || echo "BOOT")
-echo "Dica modo $EFI_MODE"
+cfdisk
