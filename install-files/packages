@@ -3,7 +3,7 @@ firefox
 arduino
 dosfstools
 grub-install
-grub-update
+update-grub
 os-prober
 mtools
 network-manager-applet
