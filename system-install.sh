@@ -4,7 +4,7 @@ loadedPackages=$(cat $DIRNAME/packages >/dev/null && echo 1 || echo 0)
 
 if [ $loadedPackages = "1" ]
 then	
-	packages=($(cat packages))
+	packages=$(cat $DIRNAME/packages)
 	pacman -Syu
 	pacman -S $packages
 
