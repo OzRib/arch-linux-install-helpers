@@ -30,7 +30,6 @@ then
 	$DIRNAME/base-configurations.sh
 
 	systemctl enable NetworkManager
-	systemctl enable lightdm
 
 	echo "Finalizado"
 else
