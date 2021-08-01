@@ -2,8 +2,6 @@ sudo
 firefox
 arduino
 dosfstools
-grub-install
-update-grub
 os-prober
 mtools
 network-manager-applet
